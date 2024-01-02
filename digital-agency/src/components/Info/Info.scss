@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.info-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $colorBlue;
+    background: radial-gradient(circle, $colorBlue 0%, rgba(0,0,0,1) 31%); 
+}
+
+.info-content{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-content: center;
+    background-color: #0c0c0c;
+}
+
+.info-text{
+    height: 350px;
+    width: 1000px;
+    border: 1px solid $colorDarkGray;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    p{
+        font-size: $bigger;
+        font-family: $font2;
+        font-weight: 700;
+        padding: 8px;
+    }
+
+    .small-text{
+        font-size: $bigMedium;
+        background: linear-gradient(to top, $colorBlue, $colorRed);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+}

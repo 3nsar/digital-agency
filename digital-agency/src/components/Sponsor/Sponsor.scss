@@ -10,6 +10,9 @@
 
 .sponsor-subtitle{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     p{
         font-size: $normal;
@@ -21,6 +24,10 @@
         display: inline-block;
         position: relative;
         z-index: 2;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
