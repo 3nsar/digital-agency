@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+
+.sponsor-container{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-subtitle{
+    text-align: center;
+    
+    p{
+        font-size: $normal;
+        font-weight: 700;
+        background: linear-gradient(to right, $colorBlue, $colorRed);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.sponsor-content{
+    img{
+        margin-top: 20px;
+        padding: 10px 30px;
+        height: 80px;
+    }
+}

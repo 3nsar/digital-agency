@@ -1,9 +1,10 @@
-@import "../styles/variables";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 .hero-container {
     position: relative;
     overflow: hidden;
-    min-height: 100vh; // Set the height to the viewport height or adjust as needed
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,16 +17,16 @@
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    animation: slowLoop 20s linear infinite;
+    z-index: -1;
   }
 
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Adjust the alpha (last value) for transparency */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha (last value) for transparency */
   }
   
   .hero-content {
@@ -33,9 +34,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
+    font-family: $font2;
     font-size: $veryBig;
-    min-height: 100vh;
+    
+
+    br{
+        margin-top: 10px;
+    }
+
+    .hero-subtitle{
+      font-size: $normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p{
+        color: #fff;
+        font-weight: bold;
+        font-family: $font1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    
   }
   
 
@@ -49,7 +73,7 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 50px;
-    border:2px solid rgba(255, 255, 255, 0.18);
+    border:3px solid #424242;
     padding: 8px 30px;
-    color: $colorLila;
+    color: $colorBlue;
   }
