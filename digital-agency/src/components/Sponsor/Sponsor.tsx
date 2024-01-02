@@ -15,7 +15,7 @@ const Sponsor = () => {
     <div className='sponsor-container'>
       <div className="sponsor-content">
       <div className="sponsor-subtitle">
-        <p><TbNorthStar color="$colorBlue"/> Trusted by</p>
+        <p><TbNorthStar color="#0044ff"/> Trusted by</p>
         </div>
         {logos.map((logo, index) => (
             <img key={index} src={logo} alt={`logo-${index + 1}`} />
