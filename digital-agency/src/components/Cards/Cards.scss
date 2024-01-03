@@ -24,10 +24,10 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 10px;
-    border:2px solid $colorGray;
+    border:1px solid $colorDarkGray;
     margin: 0 10px;
 
-    height: 100vh;
+    min-height: 100vh;
     width: 45vw;
 
     img{
@@ -35,6 +35,57 @@
         width: 100%;
         height: 400px;
         background-size: cover;
+        border-radius: 20px;
 
+    }
+
+    .cards-details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            color: $colorGray;
+
+            &:nth-child(1) {
+                margin-left: 5px;
+                padding: 10px;
+              }
+
+            &:nth-child(2) {
+                border: 1px solid $colorDarkBlue;
+                background-color:$colorLightDark;
+                margin-right: 15px;
+                padding: 10px;
+                border-radius: 10px;
+              }
+        }
+    }
+
+    .cards-title{
+        margin-left: 5px;
+        padding: 10px;
+        font-size: $bigMedium;
+        font-family: $font2;
+        font-weight: 600;
+    }
+
+    .cards-kind{
+        margin-left: 5px;
+        padding: 10px;
+        font-size: $small;
+        color: $colorRed;
+    }
+
+    button{
+        margin: 20px 0px 50px 15px;
+        padding: 8px 15px;
+        font-size: $small;
+        background-color: $colorDarkBlue;
+        color: $colorWhite;
+        border: 1.5px solid $colorLila;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px $colorLila;
     }
 }
