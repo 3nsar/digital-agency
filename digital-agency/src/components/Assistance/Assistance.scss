@@ -1,0 +1,67 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.assistance-container{
+    min-height: 100vh;
+    background-color: $colorGray;
+    color: $colorLightDark;
+    font-size: $normal;
+}
+
+.assistance-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .assistance-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+
+
+        .small-title{
+            background: linear-gradient(to right, $colorBlue, $colorRed);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            font-weight: 700;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1{
+            font-family: $font2;
+            font-size: $veryBig;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .rainbow{
+            border-left: 3px solid $colorBlue;
+            border-right: 3px solid $colorBlue;
+            padding: 8px;
+            background: rgb(205,202,202);
+            background: radial-gradient(circle, rgba(205,202,202,1) 45%, rgba(102,137,233,1) 63%); 
+        }
+
+        .dark-text{
+            font-weight: 700;
+        }
+
+        .assistance-title-text{
+            line-height: 1.5;
+            text-align: left;
+        }
+    }
+}
