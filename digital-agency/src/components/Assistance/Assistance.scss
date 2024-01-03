@@ -3,9 +3,10 @@
 
 .assistance-container{
     min-height: 100vh;
-    background-color: $colorGray;
+    background-color: $colorWhite;
     color: $colorLightDark;
     font-size: $normal;
+    
 }
 
 .assistance-content{
@@ -24,7 +25,7 @@
 
 
         .small-title{
-            background: linear-gradient(to right, $colorBlue, $colorRed);
+            background: linear-gradient(to right, $colorBlue, $colorLila);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -51,8 +52,8 @@
             border-left: 3px solid $colorBlue;
             border-right: 3px solid $colorBlue;
             padding: 8px;
-            background: rgb(205,202,202);
-            background: radial-gradient(circle, rgba(205,202,202,1) 45%, rgba(102,137,233,1) 63%); 
+            background: rgb(241, 240, 240);
+            background: radial-gradient(circle, rgba(241, 240, 240,1) 45%, rgba(102,137,233,1) 63%); 
         }
 
         .dark-text{
@@ -62,6 +63,29 @@
         .assistance-title-text{
             line-height: 1.5;
             text-align: left;
+        }
+    }
+
+    .assistance-options{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+        
+        
+        li{
+        text-decoration: none;
+        list-style: none;
+        font-size: $bigMedium;
+        color: $colorDarkDarkGray;
+        font-family: $font2;
+        font-weight: 700;
+        line-height: 2;
+
+        &:hover{
+            cursor: pointer;
+        }
         }
     }
 }
