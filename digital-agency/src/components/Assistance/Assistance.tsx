@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import "./Assistance.scss"
 import { TbNorthStar } from "react-icons/tb";
 import AssistanceCard from './AssistanceCard';
+import dwaveImg from "../../images/dwave.jpg"
+import { GiMeshBall } from "react-icons/gi";
 
 const ListItem = ({ item, selected, onClick }) => {
   const handleClick = () => {
@@ -70,6 +72,21 @@ const Assistance = () => {
                 text="The foundation of successful product design begins with a well-defined product vision. Clearly outlining the what,
                  how, why, and who sets the stage for a shared understanding and drives project success."/>}
             </div>
+        </div>
+        <div className="dwave-container">
+          <div className="dwave-content">
+            <div className="dwave-img">
+              <img src={dwaveImg} alt="pic" />
+            </div>
+            <div className="dwave-text">
+              <h2><GiMeshBall />DesignWave</h2>
+              <h1>Design, on-demand</h1>
+              <p className='dwave-subtitle'>Design plans to supercharge your business.</p>
+              <p className='dwave-paragraph'>You didn't know design could be this good... Prepare to have your mind blown by our top quality, lightening fast and super convenient design service.
+               Say goodbye to the hassle of unreliable freelancers and the exorbitant costs of bloated agencies.</p>
+               <button>Go to DesignWave</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
