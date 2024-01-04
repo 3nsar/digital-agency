@@ -1,0 +1,154 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.team-container{
+    min-height: 100vh;
+    background-color: $colorDark;
+    color: $colorWhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .team-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .team-small-title{
+            background: linear-gradient(to right, $colorBlue, $colorRed);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            font-weight: 700;
+            font-size: $normal;
+            margin-top: 25vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .team-title{
+            font-family: $font2;
+            font-size: $veryBig;
+            background: linear-gradient(to top, $colorBlue, $colorWhite,$colorWhite,$colorDarkDarkGray);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            margin-top: 20px;
+        }
+
+        .team-subtitle{
+            margin-top: 20vh;
+            font-size: $big;
+            font-family: $font1;
+            color: $colorWhite;
+        }
+    }
+}
+
+.team-box{
+    margin-top: 10vh;
+    width: 800px;
+    border: 1.2px solid $colorDarkDarkGray;
+    border-radius: 20px;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .team-box-title{
+        margin-top: 20px;
+        font-size: $medium;
+        font-family: $font2;
+        font-weight: 700;
+
+        background: linear-gradient(to top, $colorLila, $colorRed);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+
+        
+    }
+
+    .team-box-text{
+        margin-top: 10px;
+        line-height: 1.5;
+        font-family: $font1;
+        font-size: $small;
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 90%;
+        margin-bottom: 20px;
+
+        br{
+            margin-top: 10px;
+        }
+    }
+}
+
+
+.banner-container{
+    margin-top: 20px;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+
+    p{
+        color: $colorWhite;
+        font-size: $normal;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-family: $font2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px 10px;
+        border-radius: 20px;
+        background-color: #120334;
+        border: 1.2px solid $colorRed;
+        
+    }
+
+    .scroller{
+        max-width: 600px;
+        
+    }
+
+    .scroller-inner{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .scroller[data-animated= true]{
+        overflow: hidden;
+        -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+        mask:  linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    }
+
+    .scroller[data-animated= true] .scroller-inner{
+        width: max-content;
+        flex-wrap: nowrap;
+        animation: scroll 40s linear infinite;
+    }
+
+    @keyframes scroll {
+        to{
+            transform: translate(calc(-50% - 0.5rem));
+        }
+    }
+
+}
