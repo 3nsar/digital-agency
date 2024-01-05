@@ -7,3 +7,22 @@
     justify-content: center;
     flex-direction: column;
 }
+
+@mixin rainbow-titel{
+    background: linear-gradient(to right, $colorLila, $colorBlue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    font-size: $normal;
+    margin-top: 25vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
