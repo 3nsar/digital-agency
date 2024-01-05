@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Partner.scss"
 import { TbNorthStar } from "react-icons/tb";
+import Reviews from './Reviews';
 
 const Partner = () => {
   return (
@@ -30,6 +31,7 @@ const Partner = () => {
                 <p>We collaborate with partner agencies, complementing their services with our solutions. Together, we create remarkable experiences for their clients, creating lasting relationships and mutual success.</p>
               </div>
             </div>
+            <Reviews/>
         </div>
     </div>
   )
