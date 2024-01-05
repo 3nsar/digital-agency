@@ -14,6 +14,7 @@ const Navbar = () => {
                 <li>Portfolio</li>
                 <li>Team</li>
                 <li>FAQs</li>
+                <li>Contact</li>
             </ul>
         </div>
         <button>Hire us</button>

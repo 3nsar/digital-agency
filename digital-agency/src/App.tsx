@@ -7,6 +7,7 @@ import Info from './components/Info/Info'
 import Cards from './components/Cards/Cards'
 import Assistance from './components/Assistance/Assistance'
 import Team from './components/Team/Team'
+import Partner from './components/Partner/Partner'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Cards/>
       <Assistance/>
       <Team/>
+      <Partner/>
     </div>
   )
 }
