@@ -3,6 +3,8 @@ import "./Team.scss"
 import { TbNorthStar } from "react-icons/tb";
 import { FaCircle } from "react-icons/fa";
 
+
+
 const About = () => {
 
   useEffect(() => {
