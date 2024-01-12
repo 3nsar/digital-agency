@@ -25,7 +25,25 @@ const Reviews = () => {
   };
   return (
     <div className='reviews-container'>
-      <Slider {...settings}>
+      <Swiper
+        effect={'coverflow'}
+        loop={true}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 15,
+          stretch: 0,
+          depth: 500,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        navigation={true}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="mySwiper"
+      ></Swiper>
+      <SwiperSlide {...settings}>
         {reviews.map((item)=>(
             <div className='reviews-content'>
               <p>{item.text}</p>
@@ -33,7 +51,7 @@ const Reviews = () => {
               <p>{item.company}</p>
             </div>
       ))}
-      </Slider>
+      </SwiperSlide>
     </div>
   )
 }
