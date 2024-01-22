@@ -8,6 +8,7 @@ import Cards from './components/Cards/Cards'
 import Assistance from './components/Assistance/Assistance'
 import Team from './components/Team/Team'
 import Partner from './components/Partner/Partner'
+import  Accordion  from './components/Accordion/Accordion'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Assistance/>
       <Team/>
       <Partner/>
+      <Accordion/>
     </div>
   )
 }
