@@ -1,32 +1,25 @@
-import React from 'react'
-
-
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { MdDoubleArrow } from "react-icons/md";
-
-
-// import required modules
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-
+import { MdDoubleArrow } from 'react-icons/md';
 
 const Reviews = () => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, 
-    slidesToScroll: 1
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
+
   return (
     <div className='reviews-container'>
       <Swiper
-        effect={'coverflow'}
+        effect='coverflow'
         loop={true}
         grabCursor={true}
         centeredSlides={true}
@@ -41,21 +34,21 @@ const Reviews = () => {
         pagination={true}
         navigation={true}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="mySwiper"
-      ></Swiper>
-      <SwiperSlide {...settings}>
-        {reviews.map((item)=>(
-            <div className='reviews-content'>
+        className='mySwiper'
+      >
+        {reviews.map((item) => (
+          <SwiperSlide key={item.author} className='previous-swiper-slide'>
+            <div className='review-card'>
               <p>{item.text}</p>
               <p>{item.author}</p>
               <p>{item.company}</p>
             </div>
-      ))}
-      </SwiperSlide>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
-  )
-}
-
+  );
+};
 
 const reviews= [
   {
@@ -85,5 +78,13 @@ const reviews= [
   }
 ]
 
+export default Reviews;
 
-export default Reviews
+
+
+
+
+
+
+
+
