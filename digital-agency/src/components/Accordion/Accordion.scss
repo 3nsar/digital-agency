@@ -1,19 +1,49 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
+.accordion-container{
+    margin-top: 25vh;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
 
-    .accordion__button{
-        background-color: #7e0917;
-        color: #fff;
-        padding: 30px;
-        cursor: pointer;
-        border: none;
-        text-align: left;
-        width: 100%;
-        border-bottom: 1px solid #2980b9;
-        transition: background-color 0.3s ease;
-      
-        &:hover {
-          background-color: #2980b9;
-        }
+     .accordion-qst-title{
+        margin-bottom: 10vh;
+        font-size: $big;
+        font-family: $font2;
+     }
+
 }
+
+.accordian-section-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    background-color: $colorDarkBlue;
+    border: 1.5px solid $colorBlue;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+
+    .section-title-font{
+        font-size: $normal;
+    }
+    
+    
+}
+
+.accordian-section{
+    cursor: pointer;
+    max-width: 800px;
+    
+p{
+    padding: 10px;
+    line-height: 1.5;
+    font-size: $small;
+    color: $colorGray;
+}
+
+}
+
