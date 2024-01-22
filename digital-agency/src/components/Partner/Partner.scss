@@ -122,8 +122,10 @@
     justify-content: center;
     border-bottom: none;
     border-top: none;
+  
 
     .reviews-card-text{
+        font-family: $font1;
         line-height: 1.5;
         text-align: left;
         font-size: $normal;
@@ -133,6 +135,7 @@
     }
 
   }
+
 
   .reviews-card-second-part{
     height: 50px;
@@ -150,6 +153,7 @@
     .reviews-card-info{
         color: $colorLila;
         font-size: $small;
+        font-family: $font2;
     }
 
     #card-company{
