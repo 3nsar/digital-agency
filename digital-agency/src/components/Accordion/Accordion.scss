@@ -1,2 +1,19 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
+
+
+    .accordion__button{
+        background-color: #7e0917;
+        color: #fff;
+        padding: 30px;
+        cursor: pointer;
+        border: none;
+        text-align: left;
+        width: 100%;
+        border-bottom: 1px solid #2980b9;
+        transition: background-color 0.3s ease;
+      
+        &:hover {
+          background-color: #2980b9;
+        }
+}

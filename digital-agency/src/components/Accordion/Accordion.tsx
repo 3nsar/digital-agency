@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Accordion.scss"
 
 import {
     Accordion,
@@ -13,10 +14,10 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 
 export default function Example() {
     return (
-        <Accordion>
+        <Accordion allowZeroExpanded>
             <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
+                <AccordionItemHeading >
+                    <AccordionItemButton className="accordion__button">
                         What harsh truths do you prefer to ignore?
                     </AccordionItemButton>
                 </AccordionItemHeading>
@@ -31,7 +32,7 @@ export default function Example() {
             </AccordionItem>
             <AccordionItem>
                 <AccordionItemHeading>
-                    <AccordionItemButton>
+                    <AccordionItemButton className="accordion__button">
                         Is free will real or just an illusion?
                     </AccordionItemButton>
                 </AccordionItemHeading>
