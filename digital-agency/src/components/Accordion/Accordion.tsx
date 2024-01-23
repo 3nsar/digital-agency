@@ -36,14 +36,15 @@ const AccordianSection = ({section, isActiveSection, setActiveIndex, sectionInde
         setActiveIndex(nextIndex)
     }
     return(
+
           <div className='accordian-section'  onClick={toggleSection}>
              <div className='accordian-section-title'>
-             <h1 className='section-title-font'>{section.title}</h1>
-             {isActiveSection ? <MdKeyboardDoubleArrowUp/> : <MdKeyboardDoubleArrowDown /> }
+                <h1 className='section-title-font'>{section.title}</h1>
+                {isActiveSection ? <MdKeyboardDoubleArrowUp/> : <MdKeyboardDoubleArrowDown /> }
+                
              </div>
-             {isActiveSection && <p className='accordian-section-content'>{section.content}</p>}
-             
-         </div>
+             {isActiveSection && <p className='accordian-section-text'>{section.content}</p>}
+          </div>
     )
 }
 

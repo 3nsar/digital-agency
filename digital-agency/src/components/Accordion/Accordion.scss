@@ -21,6 +21,7 @@
     align-items: center;
     justify-content: space-between;
     
+    
     width: 800px;
     background-color: $colorDarkBlue;
     border: 1.5px solid $colorBlue;
@@ -41,11 +42,17 @@
 }
 
 
-.accordian-section-content{
-    
+.accordian-section-text{
+
+ width: 800px;
  padding: 10px;
  line-height: 1.5;
  font-size: $small;
  color: $colorGray;
+ background-color: $colorDarkBlue;
+ border: 1.5px solid $colorBlue;
+ border-top: none;
+ border-bottom-right-radius: 5px;
+ border-bottom-left-radius: 5px;
 
 }
