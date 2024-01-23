@@ -40,8 +40,8 @@ const AccordianSection = ({section, isActiveSection, setActiveIndex, sectionInde
              <div className='accordian-section-title'>
              <h1 className='section-title-font'>{section.title}</h1>
              {isActiveSection ? <MdKeyboardDoubleArrowUp/> : <MdKeyboardDoubleArrowDown /> }
-             {isActiveSection && <p>{section.content}</p>}
              </div>
+             {isActiveSection && <p className='accordian-section-content'>{section.content}</p>}
              
          </div>
     )
@@ -51,7 +51,7 @@ const Accordian = () => {
     const [activeIndex, setActiveIndex] = useState(0)
   return (
     <div className='accordion-container'>
-        <h1 className='accordion-qst-title'>SOME COMMON QUESTIONS</h1>
+        <h1 className='accordion-qst-title'>Some Common questions</h1>
         {accordionData.map((section, index)=>{
             return(
                 <AccordianSection 

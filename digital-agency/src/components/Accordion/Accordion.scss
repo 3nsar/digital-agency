@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     width: 800px;
     background-color: $colorDarkBlue;
     border: 1.5px solid $colorBlue;
@@ -37,13 +38,14 @@
 .accordian-section{
     cursor: pointer;
     max-width: 800px;
+}
+
+
+.accordian-section-content{
     
-p{
-    padding: 10px;
-    line-height: 1.5;
-    font-size: $small;
-    color: $colorGray;
-}
+ padding: 10px;
+ line-height: 1.5;
+ font-size: $small;
+ color: $colorGray;
 
 }
-
