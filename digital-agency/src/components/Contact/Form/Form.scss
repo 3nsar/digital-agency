@@ -1,0 +1,75 @@
+
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+
+input{
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: 2px solid $colorBlue;
+    background-color: $colorLightDark;
+    font-weight: 600;
+    color: $colorLightWhite;
+}
+
+textarea{
+    margin: 10px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: $colorLightDark;
+    border: 2px solid $colorBlue;
+    color: $colorLightWhite;
+   
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+label{
+    font-size: $small;
+    color: $colorGray;
+}
+
+.error-msg{
+    color: red;
+    display: none;
+    font-size: 12px;
+}
+
+input:invalid[focused = "true"] ~ span{
+    display: block;
+    
+}
+
+
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-submit{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact-button{
+    margin-left: 10px;
+    font-family: $font2;
+    background-color: $colorBlue;
+    box-shadow: 1px 1px 5px $colorBlue;
+    padding: 10px;
+    color: $colorWhite;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: $normal;
+}
