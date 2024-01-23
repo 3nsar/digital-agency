@@ -9,12 +9,14 @@ import Assistance from './components/Assistance/Assistance'
 import Team from './components/Team/Team'
 import Partner from './components/Partner/Partner'
 import  Accordion  from './components/Accordion/Accordion'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
     <div className='App'>
       <Navbar/>
-      <Hero/>
+      {/*<Hero/>
       <Sponsor/>
       <Info/>
       <Cards/>
@@ -22,6 +24,8 @@ const App = () => {
       <Team/>
       <Partner/>
       <Accordion/>
+      <Contact/>
+      <Footer/> */}
     </div>
   )
 }

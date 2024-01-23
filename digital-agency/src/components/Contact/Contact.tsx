@@ -58,9 +58,8 @@ const Contact = () => {
   return (
     <div className='contact-container'>
         <div className="contact-title">
-            
-            <h1>Let's talk about you</h1>
             <p className='contact-small-title'><TbNorthStar color="#0044ff"/>Start a project</p>
+            <h1>Let's talk about you</h1>
         </div>
         <div className="contact-content">
             <div className="contact-text">
