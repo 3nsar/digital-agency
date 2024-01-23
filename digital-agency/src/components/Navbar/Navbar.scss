@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 13px;
+    
 
     button{
         padding: 8px 15px;
@@ -56,7 +57,7 @@ z-index: 3;
     justify-content: center;
     h1{
         font-size: $big;
-        font-family: $font1;
+        font-family: $font2;
         margin-left: 25px;
         display: flex;
         align-items: center;
@@ -64,3 +65,76 @@ z-index: 3;
     }
 }
 
+.nav-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+
+@media (max-width: 950px){
+
+    .list-content{
+        display: none;
+    }
+
+    .nav-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        margin-right: 25px;
+      }
+
+      .show{
+        top:80px;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        list-style: none;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 10px;
+        border: 1px solid $colorDarkGray;
+    }
+    
+    .show ul{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 10px;
+        border: 1px solid $colorDarkGray;
+    }
+    
+    .show li{
+        color: $colorDarkGray;
+        padding: 15px 45px;   
+        cursor: pointer; 
+    
+        &:hover {
+            color: $colorWhite;
+            transition: 0.4s;
+        } 
+    }
+    
+
+        .nav-container button{
+            display: none;
+        }
+
+        .nav-title h1{
+            margin-left: 25px;
+        }
+
+}
