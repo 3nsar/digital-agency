@@ -159,7 +159,6 @@
     #card-company{
         margin-bottom: 20px;
     }
-
     
 }
 
@@ -171,3 +170,74 @@
     z-index: 0; 
   }
 
+
+  @media (max-width:1036px){
+    .reviews-card-star{
+      width: 250px;
+    }
+    .reviews-card-first-part{
+      width: 250px;
+    }
+    .reviews-card-second-part{
+      width: 250px;
+    }
+
+  }
+
+
+  @media (max-width:1020px){
+    .grid-container {
+      width: 800px;
+    }
+  }
+
+
+  @media (max-width:833px){
+    .grid-container {
+      width: 700px;
+    }
+  }
+
+
+
+  @media (max-width:803px){
+    .partner-big-titel{
+      font-size: $bigger;
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 10px;
+  }
+  .partner-small-titel{
+    @include rainbow-titel();
+    margin-left: 10px;
+  }
+  .partner-titel-text{
+    margin-top: 20px;
+    margin-left: 10px;
+    line-height: 1.5;
+    max-width: 800px;
+    color: $colorGray;
+}
+
+}
+
+@media (max-width:717px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 450px;
+  }
+}
+
+
+@media (max-width:467px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 300px;
+  }
+}
+
+@media (max-width:467px){
+  
+}
