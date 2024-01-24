@@ -61,7 +61,7 @@
     width: 800px;
     border: 1.2px solid $colorDarkDarkGray;
     border-radius: 20px;
-    min-height: 50vh;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,4 +154,211 @@
         }
     }
 
+}
+
+@media (max-width: 840px){
+    .team-box{
+        background-color: $colorLightDark;
+        margin-top: 10vh;
+        margin-bottom: 25vh;
+        width: 600px;
+        height: 400px;
+
+
+        .team-box-title{
+            margin-top: 20px;
+            font-size: $normal;
+            font-family: $font2;
+            font-weight: 700;
+    
+            background: linear-gradient(to top, $colorLila, $colorRed);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+    
+            
+        }
+    
+        .team-box-text{
+            margin-top: 10px;
+            line-height: 1.5;
+            font-family: $font1;
+            font-size: $small;
+            margin-left: 10px;
+            margin-right: 10px;
+            max-width: 90%;
+            margin-bottom: 20px;
+            color: $colorGray;
+    
+            br{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:720px){
+    
+.team-container{
+    min-height: 100vh;
+    background-color: $colorDark;
+    color: $colorWhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .team-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .team-small-title{
+            background: linear-gradient(to right, $colorBlue, $colorRed);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            font-weight: 700;
+            font-size: $normal;
+            margin-top: 25vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .team-title{
+            font-family: $font2;
+            font-size: $big;
+            background: linear-gradient(to top, $colorBlue, $colorWhite,$colorWhite,$colorDarkDarkGray);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            margin-top: 20px;
+        }
+
+        .team-subtitle{
+            margin-top: 20vh;
+            font-size: $medium;
+            font-family: $font1;
+            color: $colorWhite;
+        }
+    }
+}
+}
+
+@media (max-width: 620px){
+    .team-box{
+        background-color: $colorLightDark;
+        margin-top: 10vh;
+        margin-bottom: 25vh;
+        width: 400px;
+        height: 500px;
+
+        .team-box-title{
+            text-align: center;
+        }
+    }
+
+    .banner-container{
+        margin-top: 20px;
+        min-height: 10vh;
+        display: flex;
+        align-items: center;
+    
+        p{
+            color: $colorWhite;
+            font-size: $normal;
+            margin-right: 10px;
+            margin-left: 10px;
+            font-family: $font2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 7px 10px;
+            border-radius: 20px;
+            background-color: #120334;
+            border: 1.2px solid $colorRed;
+            
+        }
+    
+        .scroller{
+            max-width: 300px;
+            
+        }
+    }
+}
+
+
+@media (max-width: 436px){
+    .team-container{
+        min-height: 100vh;
+        background-color: $colorDark;
+        color: $colorWhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .team-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .team-small-title{
+                background: linear-gradient(to right, $colorBlue, $colorRed);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                display: inline-block;
+                position: relative;
+                z-index: 2;
+                font-weight: 700;
+                font-size: $normal;
+                margin-top: 25vh;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+    
+            .team-title{
+                font-family: $font2;
+                font-size: $medium;
+                background: linear-gradient(to top, $colorBlue, $colorWhite,$colorWhite,$colorDarkDarkGray);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                display: inline-block;
+                position: relative;
+                z-index: 2;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 420px){
+    .team-box{
+        background-color: $colorLightDark;
+        margin-top: 10vh;
+        margin-bottom: 25vh;
+        width: 300px;
+        height: 600px;
+
+        .team-box-title{
+            font-weight: 400;
+        }
+    }
 }

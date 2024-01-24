@@ -15,6 +15,7 @@ import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 const Reviews = () => {
+
   
   return(
     <div className='reviews-container'>
@@ -22,11 +23,25 @@ const Reviews = () => {
         effect={'coverflow'}
         loop={true}
         grabCursor={true}
-        
         slidesPerView={3}
         navigation={true}
         modules={[Navigation]}
         className="mySwiper"
+        breakpoints={{
+          // when window width is >= 640px
+          240: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 1024px
+          812: {
+            slidesPerView: 3,
+          },
+       }}
+        
       >
         {reviews.map((item) => (
         <SwiperSlide key={item.id} className="previous-swiper-slide">
