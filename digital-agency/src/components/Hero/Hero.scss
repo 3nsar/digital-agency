@@ -78,3 +78,27 @@
     padding: 8px 30px;
     color: $colorBlue;
   }
+
+
+  @media (max-width: 944px){
+    .hero-content{
+      font-size: $big;
+    }
+  }
+
+  @media (max-width: 645px){
+    .hero-content{
+      font-size: $medium;
+    }
+
+    .gradient-text{
+      padding: 3px 20px;
+    }
+  }
+
+  
+  @media (max-width: 390px){
+    .hero-content{
+      font-size: $normal;
+    }
+  }
