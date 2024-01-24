@@ -47,3 +47,59 @@
         z-index: 2;
     }
 }
+
+@media (max-width: 1020px){
+    .info-text{
+        width: 800px;
+
+        p{
+            font-size: $big;
+        }
+    }
+}
+
+@media (max-width: 820px){
+    .info-text{
+        width: 600px;
+
+        .small-text{
+            font-size: $medium;
+        }
+    }
+
+    .info-text p{
+        font-size: $medium;
+    }
+
+}
+
+
+@media (max-width: 615px){
+    .info-text{
+        width: 400px;
+        height: 200px;
+
+        .small-text{
+            font-size: $normal;
+        }
+    }
+
+    .info-text p{
+        font-size: $normal;
+    }
+}
+
+@media (max-width: 405px){
+    .info-text{
+        width: 300px;
+        height: 200px;
+
+        .small-text{
+            font-size: $small;
+        }
+    }
+
+    .info-text p{
+        font-size: $small;
+    }
+}
