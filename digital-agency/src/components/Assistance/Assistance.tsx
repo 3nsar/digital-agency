@@ -34,12 +34,13 @@ const Assistance = () => {
              <br className='assistance-break'/>product design, Webflow development, and training, all in one comprehensive suite.</p>
         </div>
         <div className="assistance-options">
+         <div className="assistance-options-inner">
           <ul>
             <ListItem item="Branding" selected={selectedService === 'Branding'} onClick={handleServiceClick} />
             <ListItem item="Website Design" selected={selectedService === 'Website Design'} onClick={handleServiceClick} />
             <ListItem item="Webflow" selected={selectedService === 'Webflow'} onClick={handleServiceClick} />
             <ListItem item="Product Design" selected={selectedService === 'Product Design'} onClick={handleServiceClick} />
-          </ul>
+          </ul> 
             <div className="assistance-text">
                 {selectedService === 'Branding' 
                 && 
@@ -52,7 +53,7 @@ const Assistance = () => {
                 />}
                 {selectedService === 'Website Design' 
                 && <AssistanceCard
-                title="UX Design + content strategy"
+                title="UX Design + content"
                 subtitle="Wireframes and content guidance"
                 time="2-3 weeks"
                 text="Our dedicated UX designers create custom wireframes and offer content guidance to ensure the end result of your project is both intuitive and impactful,
@@ -66,12 +67,13 @@ const Assistance = () => {
                  and other systems to optimise operations and enhance user experiences, all within a unified digital ecosystem."/>}
                 {selectedService === 'Product Design' 
                 && <AssistanceCard 
-                title="Defining the product vision"
+                title="Defining the product"
                 subtitle="Crafting the product vision"
                 time="1-2 days"
                 text="The foundation of successful product design begins with a well-defined product vision. Clearly outlining the what,
                  how, why, and who sets the stage for a shared understanding and drives project success."/>}
             </div>
+        </div>
         </div>
         <div className="dwave-container">
           <div className="dwave-content">
