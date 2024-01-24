@@ -18,7 +18,10 @@ const Sponsor = () => {
         <p><TbNorthStar color="#0044ff"/> Trusted by</p>
         </div>
         {logos.map((logo, index) => (
+          <>
             <img key={index} src={logo} alt={`logo-${index + 1}`} />
+            {index === 2 && <br className='sponsor-break'/>}
+          </>
         ))}
       </div>
     </div>

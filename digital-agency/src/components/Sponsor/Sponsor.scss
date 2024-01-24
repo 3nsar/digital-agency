@@ -38,3 +38,33 @@
         height: 80px;
     }
 }
+
+.sponsor-break{
+    display: none;
+}
+
+@media(max-width:900px){
+    .sponsor-content{
+        img{
+            margin-top: 20px;
+            padding: 10px 20px;
+            height: 80px;
+        }
+    }
+}
+
+@media(max-width:900px){
+    .sponsor-break{
+        display: block;
+    }
+}
+
+@media(max-width:445px){
+    .sponsor-content{
+        img{
+            margin-top: 20px;
+            padding: 7px 20px;
+            height: 55px;
+        }
+    }
+}
