@@ -84,3 +84,114 @@
         font-size: $small;
         color: $colorDarkGray;
     }
+
+    @media (max-width: 1015px){
+        .footer-box{
+            width: 650px;
+            height: 200px;
+        }
+        .footer-list-content{
+            #footer-li{
+                margin-right: 10px;
+                cursor: pointer;
+                &:hover{
+                    color: $colorRed;
+                    transition: 0.4s ease-in;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 669px){
+        .footer-title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            h1{
+                font-size: $big;
+                font-family: $font2;
+                margin-left: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        .footer-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 500px;
+            width: 400px;
+        
+        }
+        .footer-list-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            #footer-ul{
+                display: flex;
+                list-style: none;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+
+            #footer-li{
+                margin-right: 0px;
+                padding: 10px;
+                cursor: pointer;
+                &:hover{
+                    color: $colorRed;
+                    transition: 0.4s ease-in;
+                }
+            }
+        }
+
+        .social-list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            #social-ul{
+                list-style: none;
+                display: flex;
+            }
+    
+            #social-li{
+                margin-right: 5px;
+                margin-left: 5px;
+                
+                cursor: pointer;
+    
+            }
+        }
+    }
+
+
+    @media (max-width: 550px){
+        #footer-end{
+            margin-top: 20px;
+            font-size: $small;
+            color: $colorDarkGray;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 415px){
+
+        .footer-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 500px;
+            width: 300px;
+        
+        }
+    }

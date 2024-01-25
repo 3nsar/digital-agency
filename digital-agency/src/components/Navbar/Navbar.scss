@@ -7,6 +7,8 @@
     padding: 13px;
     
 
+    
+
     button{
         padding: 8px 15px;
         font-size: $normal;
@@ -75,13 +77,16 @@ z-index: 3;
     display: none;
     cursor: pointer;
   }  
-  
+
+
 
 @media (max-width: 950px){
+
 
     .list-content{
         display: none;
     }
+
 
     .nav-icon {
         display: flex;

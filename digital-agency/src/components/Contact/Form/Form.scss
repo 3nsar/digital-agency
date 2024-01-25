@@ -72,4 +72,32 @@ input:invalid[focused = "true"] ~ span{
     cursor: pointer;
     margin-top: 20px;
     font-size: $normal;
+
+    
+    &:hover{
+        background-color: #033fe4;
+        transition: 0.3s ease-in;
+    }
+}
+
+@media (max-width:410px){
+    #contact-button{
+        margin-left: 10px;
+        font-family: $font2;
+        background-color: $colorBlue;
+        box-shadow: 1px 1px 5px $colorBlue;
+        padding: 10px;
+        font-size: $small;
+    }
+}
+
+@media (max-width:371px){
+    input{
+        padding: 8px;
+    }
+    textarea{
+        margin: 10px 0px;
+        padding: 3px;
+    }
+    
 }
