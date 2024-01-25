@@ -32,14 +32,15 @@ const Contact = () => {
       
           required:true
         },
-        {
-          id:3,
-          name:"birthday",
-          type:"date",
-          placeholder:"BIRTHDAY",
-         
-          required:true
-        },
+       /* {
+          id: 3,
+          name: "birthday",
+          type: "text", // Use text input for birthday
+          placeholder: "YYYY-MM-DD",
+          errorMessage: "Please enter a valid birthday",
+          pattern: "^\\d{4}-\\d{2}-\\d{2}$", // You can adjust the pattern as needed
+          required: true,
+        },*/
         
         
        ]
