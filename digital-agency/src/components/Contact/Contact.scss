@@ -68,6 +68,11 @@
         cursor: pointer;
         margin-top: 20px;
         font-size: $normal;
+
+        &:hover{
+            background-color: #033fe4;
+            transition: 0.3s ease-in;
+        }
     }
 
 }
@@ -87,6 +92,48 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+}
 
+@media (max-width: 877px){
+    .contact-content{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contact-text{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:418px){
+    .contact-text{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 300px;
+
+        p{
+            line-height: 1.5;
+            font-size: $small;
+            color: $colorGray;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media (max-width:410px){
+    .contact-text{
+    #contact-button{
+        margin-left: 10px;
+        font-family: $font2;
+        background-color: $colorBlue;
+        box-shadow: 1px 1px 5px $colorBlue;
+        padding: 10px;
+        font-size: $small;
+    }
+}
 }

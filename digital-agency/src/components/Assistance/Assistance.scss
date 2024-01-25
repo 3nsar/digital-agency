@@ -96,7 +96,7 @@
         justify-content: space-between;
         align-items: center;
         
-        margin-bottom: 25vh;
+        margin-bottom: 10vh;
     }
 }
 
@@ -105,7 +105,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 25vh;
+    margin-bottom: 10vh;
 
     .dwave-content{
         display: flex;
@@ -279,6 +279,7 @@
         .dwave-content{
             flex-direction: column;
             height: 700px;
+            width: 600px;
 
             .dwave-img{
                 img{
@@ -350,6 +351,73 @@
     }
 }
 
+@media (max-width:632px){
+        .dwave-container{
+            .dwave-content{
+                flex-direction: column;
+                height: 700px;
+                width: 310px;
+
+                .dwave-img{
+                    img{
+                        height:150px;
+                        width: 270px;
+                        margin-left: 0px;
+                        border-radius: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                    
+            .dwave-text{
+                margin-left: 0px;
+                margin-right: 0px;
+                max-width: 400px;
+                h2{
+                    display: flex;
+                    align-items: center;
+                    font-family: $font2;
+                    font-weight: 700;
+                    font-size: $medium;
+                    margin-left: 10px;
+                }
+                h1{
+                    font-family: $font2;
+                    font-size: $medium;
+                    background: linear-gradient(to right, $colorBlue, $colorRed);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                    display: inline-block;
+                    position: relative;
+                    z-index: 2;
+                    font-weight: 700;
+                    margin-top: 10px;
+                    margin-left: 10px;
+    
+                }
+                .dwave-subtitle{
+                    margin-top: 10px;
+                    font-size: $normal;
+                    font-weight: 700;
+                    margin-left: 10px;
+                }
+    
+                .dwave-paragraph{
+                    margin-top: 10px;
+                    font-size: $small;
+                    line-height: 1.5;
+                    margin-left: 10px;
+                    
+                }
+                button{
+                    margin-left: 10px;
+                }
+             }
+            }
+        }
+}
+
 @media (max-width:600px){
     .assistance-content{
         .assistance-title{
@@ -384,8 +452,8 @@
 
             .dwave-img{
                 img{
-                    height: auto; 
-                    max-width: 50%;
+                    height:150px;
+                    width: 270px;
                     border-radius: 20px;
                 }
             }
