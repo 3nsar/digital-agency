@@ -56,3 +56,38 @@
  border-bottom-left-radius: 5px;
 
 }
+
+@media(max-width:823px){
+    .accordian-section-title{
+        width: 500px;
+    }
+    .accordian-section{
+        max-width: 500px;
+    }
+    .accordian-section-text{
+        width: 500px;
+    }
+}
+
+@media(max-width:528px){
+    .accordian-section-title{
+        width: 300px;
+        .section-title-font{
+            font-size: $small;
+        }
+    }
+    .accordian-section{
+        max-width: 300px;
+    }
+    .accordian-section-text{
+        width: 300px;
+    }
+    .accordion-container{
+         .accordion-qst-title{
+            margin-bottom: 10vh;
+            font-size: $medium;
+            font-family: $font2;
+         }
+    
+    }
+}

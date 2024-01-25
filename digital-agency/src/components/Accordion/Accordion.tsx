@@ -49,7 +49,7 @@ const AccordianSection = ({section, isActiveSection, setActiveIndex, sectionInde
 }
 
 const Accordian = () => {
-    const [activeIndex, setActiveIndex] = useState(0)
+    const [activeIndex, setActiveIndex] = useState(null)
   return (
     <div className='accordion-container'>
         <h1 className='accordion-qst-title'>Some Common questions</h1>
