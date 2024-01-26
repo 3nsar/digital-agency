@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import "./Assistance.scss"
 import { TbNorthStar } from "react-icons/tb";
 import AssistanceCard from './AssistanceCard';
@@ -86,7 +86,7 @@ const Assistance = () => {
               <p className='dwave-subtitle'>Design plans to supercharge your business.</p>
               <p className='dwave-paragraph'>You didn't know design could be this good... Prepare to have your mind blown by our top quality, lightening fast and super convenient design service.
                Say goodbye to the hassle of unreliable freelancers and the exorbitant costs of bloated agencies.</p>
-               <button>Go to DesignWave</button>
+               <a href="https://www.designwave.co/" target="_blank" rel="noopener noreferrer"><button>Go to DesignWave</button> </a>
             </div>
           </div>
         </div>
