@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./AssistanceCard.scss"
 
 const AssistanceCard = ({text,subtitle,time,title}) => {

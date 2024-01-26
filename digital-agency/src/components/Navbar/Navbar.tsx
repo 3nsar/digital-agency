@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState} from 'react';
 import './Navbar.scss';
 import { TbNorthStar } from "react-icons/tb";
 import { FaBars } from 'react-icons/fa';

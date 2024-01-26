@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Partner.scss';
 import { TbNorthStar } from "react-icons/tb";
 

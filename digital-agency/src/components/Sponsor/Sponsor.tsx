@@ -1,4 +1,4 @@
-import React from 'react';
+
 import "./Sponsor.scss";
 import { TbNorthStar } from "react-icons/tb";
 import logo1 from "./Sponsor-Images/logo1.webp";

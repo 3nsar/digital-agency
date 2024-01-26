@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import {useEffect} from 'react'
 import "./Team.scss"
 import { TbNorthStar } from "react-icons/tb";
 import { FaCircle } from "react-icons/fa";
