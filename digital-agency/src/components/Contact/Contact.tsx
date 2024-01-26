@@ -1,6 +1,6 @@
 import Form from './Form/Form';
 import './Contact.scss';
-import React,{useState} from 'react';
+import {useState} from 'react';
 import { TbNorthStar } from "react-icons/tb";
 
 const Contact = () => {
@@ -66,7 +66,7 @@ const Contact = () => {
             <div className="contact-text">
                 <h1>Free 30min consultation</h1>
                 <p>Have a new project in mind? Schedule a 30-minute discovery call or fill out the quick form, and together we'll explore the possibilities.</p>
-                <button id='contact-button'>Schedule discovery call</button>
+                <a href="https://calendly.com/de?" target="_blank" rel="noopener noreferrer"><button id='contact-button'>Schedule discovery call</button></a>
             </div>
             <div className="contact-form">
             <form onSubmit={handleSubmit}>
@@ -78,7 +78,7 @@ const Contact = () => {
       ))}
       <div className="form-submit">
        <textarea cols={45} rows={8} placeholder='YOUR MESSAGE'></textarea>
-       <button id='contact-button'>Submit</button>
+          <button id='contact-button'>Submit</button>
        </div>
      </form>
             </div>
