@@ -1,7 +1,6 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 import "./Accordion.scss"
-import { FaPlus } from "react-icons/fa";
-import { MdClose } from "react-icons/md";
+
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 

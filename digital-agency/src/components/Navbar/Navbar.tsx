@@ -11,13 +11,6 @@ const Navbar = () => {
   const [showNav, setShowNav] = useState<boolean>(false);
   const [isSticky, setIsSticky] = useState<boolean>(false);
 
-  const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  };
 
   const toggleNav = () => {
     setShowNav(!showNav);

@@ -1,7 +1,8 @@
-import React from 'react';
 import './Hero.scss';
 import heroVideo from  "../../video/hero-video.mp4"
 import { TbNorthStar } from "react-icons/tb";
+
+
 
 
 const Hero = () => {
