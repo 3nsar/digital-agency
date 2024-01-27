@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Footer.scss"
 import { TbNorthStar } from "react-icons/tb";
 import { PiLinkedinLogoFill } from "react-icons/pi";
