@@ -1,8 +1,19 @@
-import {useState} from 'react'
-import "./Accordion.scss"
-
+import { useState } from 'react';
+import "./Accordion.scss";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
+
+type SectionType = {
+ title: string;
+ content: string;
+};
+
+type AccordianSectionProps = {
+ section: SectionType;
+ isActiveSection: boolean;
+ setActiveIndex: (index: number | null) => void;
+ sectionIndex: number;
+};
 
 const accordionData= [
     {
@@ -29,42 +40,47 @@ const accordionData= [
 
 ]
 
-const AccordianSection = ({section, isActiveSection, setActiveIndex, sectionIndex })=>{
-    const toggleSection =()=>{
-        const nextIndex = isActiveSection ? null :sectionIndex;
-        setActiveIndex(nextIndex)
-    }
-    return(
-
-          <div className='accordian-section'  onClick={toggleSection}>
-             <div className='accordian-section-title'>
-                <h1 className='section-title-font'>{section.title}</h1>
-                {isActiveSection ? <MdKeyboardDoubleArrowUp/> : <MdKeyboardDoubleArrowDown /> }
-                
-             </div>
-             {isActiveSection && <p className='accordian-section-text'>{section.content}</p>}
-          </div>
-    )
-}
-
-const Accordian = () => {
-    const [activeIndex, setActiveIndex] = useState(null)
-  return (
-    <div className='accordion-container'>
-        <h1 className='accordion-qst-title'>Some Common questions</h1>
-        {accordionData.map((section, index)=>{
-            return(
-                <AccordianSection 
-                section={section} 
-                key={index} 
-                isActiveSection={index === activeIndex}
-                setActiveIndex={setActiveIndex}
-                sectionIndex = {index}
-                />
-            )
-        })}
-    </div>
-  )
-}
-
-export default Accordian
+const AccordianSection = ({
+    section,
+    isActiveSection,
+    setActiveIndex,
+    sectionIndex,
+   }: AccordianSectionProps) => {
+    const toggleSection = () => {
+       const nextIndex = isActiveSection ? null : sectionIndex;
+       setActiveIndex(nextIndex);
+    };
+   
+    return (
+       <div className='accordian-section' onClick={toggleSection}>
+         <div className='accordian-section-title'>
+           <h1 className='section-title-font'>{section.title}</h1>
+           {isActiveSection ? <MdKeyboardDoubleArrowUp /> : <MdKeyboardDoubleArrowDown />}
+         </div>
+         {isActiveSection && <p className='accordian-section-text'>{section.content}</p>}
+       </div>
+    );
+   };
+   
+   const Accordian = () => {
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+   
+    return (
+       <div className='accordion-container'>
+         <h1 className='accordion-qst-title'>Some Common questions</h1>
+         {accordionData.map((section, index) => {
+           return (
+             <AccordianSection
+               section={section}
+               key={index}
+               isActiveSection={index === activeIndex}
+               setActiveIndex={setActiveIndex}
+               sectionIndex={index}
+             />
+           );
+         })}
+       </div>
+    );
+   };
+   
+   export default Accordian;

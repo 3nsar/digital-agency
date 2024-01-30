@@ -5,7 +5,14 @@ import AssistanceCard from './AssistanceCard';
 import dwaveImg from "../../images/dwave.jpg"
 import { GiMeshBall } from "react-icons/gi";
 
-const ListItem = ({ item, selected, onClick }) => {
+
+type ListItemProps = {
+  item: string;
+  selected: boolean;
+  onClick: (service: string) => void;
+ };
+
+const ListItem = ({ item, selected, onClick }: ListItemProps) => {
   const handleClick = () => {
     onClick(item);
   };
@@ -20,7 +27,7 @@ const ListItem = ({ item, selected, onClick }) => {
 const Assistance = () => {
   const [selectedService, setSelectedService] = useState('Branding');
 
-  const handleServiceClick = (service) => {
+  const handleServiceClick = (service: string) => {
     setSelectedService(service);
   };
 

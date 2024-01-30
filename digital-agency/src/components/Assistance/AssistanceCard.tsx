@@ -1,7 +1,13 @@
-
 import "./AssistanceCard.scss"
 
-const AssistanceCard = ({text,subtitle,time,title}) => {
+type AssistanceCardProps = {
+ text: string;
+ subtitle: string;
+ time: string;
+ title: string;
+};
+
+const AssistanceCard = ({text, subtitle, time, title}: AssistanceCardProps) => {
   return (
     <div className='assistance-card-container'>
         <div className="assistance-card-content">
