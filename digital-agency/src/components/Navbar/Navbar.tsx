@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 const Navbar = () => {
 
   const [showNav, setShowNav] = useState<boolean>(false);
-  const [isSticky, setIsSticky] = useState<boolean>(false);
+  const [isSticky, /*setIsSticky*/] = useState<boolean>(false);
 
 
   const toggleNav = () => {

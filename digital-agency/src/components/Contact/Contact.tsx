@@ -1,10 +1,10 @@
 import Form from './Form/Form';
-import './Contact.scss';
-import {useState} from 'react';
+import "./Contact.scss"
+import {ChangeEvent, FormEvent, useState} from 'react';
 import { TbNorthStar } from "react-icons/tb";
 
 const Contact = () => {
-    const [values, setValues] = useState({
+    const [values, setValues] = useState<{ [key: string]: string }>({
         username:"",
         email:"",
         birthday:"",
@@ -45,16 +45,16 @@ const Contact = () => {
         
        ]
       
-        const handleSubmit = (e)=>{
-          e.preventDefault();
-      
-        }
-      
-        const onChange = (e)=>{
-          setValues({...values, [e.target.name]: e.target.value})
-        }
-      
-        console.log(values)
+       const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        // Your form submission logic here
+      }
+    
+      const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setValues({ ...values, [e.target.name]: e.target.value })
+      }
+    
+      console.log(values);
 
   return (
     <div className='contact-container'>

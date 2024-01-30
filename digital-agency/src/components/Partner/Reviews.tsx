@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // import required modules
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 const Reviews = () => {
 
